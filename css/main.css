@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu {
+    background-color: #3a016d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+body{
+    background-image: url(../img/juegos.jpg_1756841869.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.parrafo {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.titulo {
+    padding: 1rem;
+    font-size: 2rem;
+}
+.texto {
+    width: 50%;
+    background-color: #00000070;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 1rem;
+}
+
+.imagen{
+    width: 100%;
+    border-color: black;
+    border-style: ridge;
+    border-width: 1rem;
+    border-radius: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+.contenido{
+    background-color: #3b016d80;
+    display: flex;
+    padding: 5rem;
+    gap: 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img1 {
+    border: solid 1rem;
+    width: 350px;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+.img2 {
+    border: solid 1rem;
+    width: 700px;
+    border-radius: 1rem;
+}
+
+.img3 {
+    border: solid 1rem;
+    width: 830px;
+    border-radius: 1rem;
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.61);
+    background-color:#3a016d;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.p1 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.p2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.p3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+}
+
+.lista{
+    display: flex;
+    color: white;
+    gap: 2rem;
+}
+
+.icons{
+    font-size: 2rem;
+}
+
+.logo {
+    color: white;
+}
+
+.link {
+    color: white;
+}
+
+/* contacto */
+
+.form {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 4rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+ .form h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+ }
+
+.cuadro {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid #3b016db6;
+}
+
+.botons {
+    width: 100%;
+    background-color: #aa6ce0;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: .8rem;
+    font-size: 1rem;
+}
+
+/* productos,juegos */
+
+.grilla {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    margin-bottom: 2rem;
+}
+
+.images{
+    width: 300px;
+}
+.container {
+    background-color: #00000057;
+    padding: 2rem;
+    border: dashed 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.descripcion {
+    text-align: left;
+    color: white;
+    padding: 0.5rem;
+}
+
+.boton {
+    background-color: #3b016db6;
+    color: white;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: .75rem;
+    box-shadow: 7px 13px 37px #000;
+}
+
+/* requisitos */
+
+.contenedor {
+    display: flex;
+    justify-content:space-around;
+    background-color: #0000006c;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 2rem;
+}
+.juego {
+    background-color: #0000006c;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(133, 59, 202);
+    box-shadow: 7px 13px 37px #000;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.3px white;
+}
+
+.requisitos {
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.listas {
+    list-style-type:circle;
+}

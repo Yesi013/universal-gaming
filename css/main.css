@@ -310,6 +310,12 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .title {
         font-size: 2rem;
     }

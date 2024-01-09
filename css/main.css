@@ -27,6 +27,10 @@ img {
     padding: 1rem 3rem;
 }
 
+.open, .close {
+    display: none;
+}
+
 .nav {
     display: flex;
     gap: 1rem;
@@ -49,6 +53,7 @@ body{
 .titulo {
     padding: 1rem;
     font-size: 2rem;
+    margin-top: 1rem;
 }
 .texto {
     width: 50%;
@@ -71,22 +76,21 @@ body{
 .contenido{
     background-color: #3b016d80;
     display: flex;
-    padding: 5rem;
-    gap: 10rem;
+    padding: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
 }
 
 .img1 {
     border: solid 1rem;
-    width: 350px;
-    height: 350px;
+    width: 700px;
     border-radius: 1rem;
 }
 
 .img2 {
     border: solid 1rem;
-    width: 700px;
+    width: 720px;
     border-radius: 1rem;
 }
 
@@ -261,4 +265,96 @@ body{
 
 .listas {
     list-style-type:circle;
+}
+
+/* mediaquaries */
+
+@media screen and (max-width: 900px) {
+    .parrafo {
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .titulo{
+        margin-top: 0rem;
+    }
+    .texto {
+        margin-top: 0%;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 1rem;
+          
+    }
+    .imagen {
+        width: 100%;
+        height: 100%;
+    }
+     .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+     }
+     .img3 {
+        height: 175px;
+        align-items: center;
+     }
+}
+
+@media screen and (max-width: 700px) {
+    .parrafo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .title {
+        font-size: 2rem;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .img3 {
+        height: 0%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .open, .close{
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color:#3a016d;
+    }
+    .close {
+        background-color: #aa6ce0;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: end;
+        background-color:#aa6ce0;
+        padding: 2rem;
+        bottom: 0;
+        gap: 2rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
 }

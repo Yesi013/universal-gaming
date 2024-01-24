@@ -102,7 +102,7 @@ body{
 .title {
     text-align: center;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.61);
+    color: #ffffff9c;
     background-color:#3a016d;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -167,7 +167,7 @@ body{
 
 .form {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: #000000bd;
     padding: 4rem;
     margin: auto;
     margin-top: 4rem;
@@ -371,6 +371,7 @@ body{
         padding: 2rem;
         bottom: 0;
         gap: 2rem;
+        z-index: 999;
     }
 
     .nav.visible {
@@ -403,10 +404,15 @@ body{
         align-content: center;
         padding: 3rem;
     }
+    
+}
 
-    .nav {
+@media screen and (max-width: 1350px) {
+    .contenedor {
         display: flex;
-        flex-direction:row-reverse;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
     }
     
 }

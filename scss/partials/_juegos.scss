@@ -34,6 +34,26 @@ body{
             padding: 5rem;
             margin-bottom: 3rem;
         }
+        .texto {
+            width: 50%;
+            background-color: #00000070;
+            color: $tercerColor;
+            text-align: center;
+            margin-top: 2rem;
+            box-shadow: 7px 13px 37px $colorSecundario;
+            border-radius: 1rem;
+                .boton {
+                    background-color: #3b016db6;
+                    color: $tercerColor;
+                    padding: 0.5rem;
+                    border-style: none;
+                    border-radius: .75rem;
+                    box-shadow: 7px 13px 37px $colorSecundario;
+            }
+            .link {
+                color: $tercerColor;
+            }
+        }
         .texto-1 {
             display: flex;
             flex-direction: column;
@@ -42,18 +62,7 @@ body{
             padding: 2rem;
             width: 100%;
             margin-bottom: 2rem;
-                .boton {
-                    background-color: #3b016db6;
-                    color: $tercerColor;
-                    padding: 0.5rem;
-                    border-style: none;
-                    border-radius: .75rem;
-                    box-shadow: 7px 13px 37px $colorSecundario;
-                }
-                .link {
-                    color: $tercerColor;
-                }
-        }
+        }    
         .footer {
             background-color: $colorSecundario;
             display: flex;

@@ -41,7 +41,7 @@ body{
 
             .texto {
                 width: 50%;
-                background-color: #00000070;
+                background-color: #0000007c;
                 color: $tercerColor;
                 text-align: center;
                 margin-top: 2rem;
@@ -213,14 +213,14 @@ body{
 
 @media screen and (max-width: 500px) {
     
-    menu .open {
+    body .menu .open {
         display: block;
         border: 0;
         font-size: 2rem;
         background-color:$colorPrincipal;
     }
 
-    .nav {
+    body .menu .nav {
         opacity: 0;
         visibility: hidden;
         position: absolute;
@@ -233,13 +233,14 @@ body{
         bottom: 0;
         gap: 2rem;
         z-index: 999;
-        .close{
+    }
+        nav .close{
             display: block;
             border: 0;
             font-size: 2rem;
             background-color:$colorPrincipal;
         }
-        .close {
+        nav .close {
             background-color: $cuartoColor;
         }
 
@@ -251,7 +252,7 @@ body{
     .title {
         font-size: 1.5rem;
     }
-    }
+
 }
 
 }

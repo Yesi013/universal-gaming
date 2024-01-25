@@ -39,6 +39,12 @@ body{
             box-shadow: 7px 13px 37px $colorSecundario;
             font-size: 2rem;
             -webkit-text-stroke: 0.3px $tercerColor;
+
+            &:hover{
+                background-color: #3b016d7c;
+                font-size: 1.5rem;
+                transition: 1s;
+            }
         }
         .contenedor {
             display: flex;

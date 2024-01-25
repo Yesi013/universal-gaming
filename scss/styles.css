@@ -56,7 +56,7 @@ body .parrafo {
 }
 body .parrafo .texto {
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.4392156863);
+  background-color: rgba(0, 0, 0, 0.4862745098);
   color: #ffffff;
   text-align: center;
   margin-top: 2rem;
@@ -206,13 +206,13 @@ body .footer .lista .icons {
   }
 }
 @media screen and (max-width: 500px) {
-  body menu .open {
+  body body .menu .open {
     display: block;
     border: 0;
     font-size: 2rem;
     background-color: #3a016d;
   }
-  body .nav {
+  body body .menu .nav {
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -226,20 +226,20 @@ body .footer .lista .icons {
     gap: 2rem;
     z-index: 999;
   }
-  body .nav .close {
+  body nav .close {
     display: block;
     border: 0;
     font-size: 2rem;
     background-color: #3a016d;
   }
-  body .nav .close {
+  body nav .close {
     background-color: #aa6ce0;
   }
-  body .nav .nav.visible {
+  body .nav.visible {
     opacity: 1;
     visibility: visible;
   }
-  body .nav .title {
+  body .title {
     font-size: 1.5rem;
   }
 }
@@ -276,6 +276,26 @@ body .carrusel {
   padding: 5rem;
   margin-bottom: 3rem;
 }
+body .texto {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  box-shadow: 7px 13px 37px #000000;
+  border-radius: 1rem;
+}
+body .texto .boton {
+  background-color: rgba(59, 1, 109, 0.7137254902);
+  color: #ffffff;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 0.75rem;
+  box-shadow: 7px 13px 37px #000000;
+}
+body .texto .link {
+  color: #ffffff;
+}
 body .texto-1 {
   display: flex;
   flex-direction: column;
@@ -284,17 +304,6 @@ body .texto-1 {
   padding: 2rem;
   width: 100%;
   margin-bottom: 2rem;
-}
-body .texto-1 .boton {
-  background-color: rgba(59, 1, 109, 0.7137254902);
-  color: #ffffff;
-  padding: 0.5rem;
-  border-style: none;
-  border-radius: 0.75rem;
-  box-shadow: 7px 13px 37px #000000;
-}
-body .texto-1 .link {
-  color: #ffffff;
 }
 body .footer {
   background-color: #000000;
@@ -509,6 +518,11 @@ body .juego {
   box-shadow: 7px 13px 37px #000000;
   font-size: 2rem;
   -webkit-text-stroke: 0.3px #ffffff;
+}
+body .juego:hover {
+  background-color: rgba(59, 1, 109, 0.4862745098);
+  font-size: 1.5rem;
+  transition: 1s;
 }
 body .contenedor {
   display: flex;

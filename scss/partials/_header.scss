@@ -1,0 +1,28 @@
+.menu {
+    background-color: $colorPrincipal;
+    color: $tercerColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+    .logo {
+        color: $tercerColor;
+    }
+    
+    .open{
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        gap: 1rem;
+
+        .close {
+            display: none;
+        }
+        .link {
+            color: $tercerColor;
+        }
+    }
+}

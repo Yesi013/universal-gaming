@@ -1,0 +1,16 @@
+.footer {
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+
+    .lista{
+        display: flex;
+        color: $tercerColor;
+        gap: 2rem;
+       
+        .icons{
+            font-size: 2rem;
+        } 
+    }  
+}

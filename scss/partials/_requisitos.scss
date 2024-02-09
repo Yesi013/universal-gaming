@@ -9,11 +9,12 @@
             box-shadow: 7px 13px 37px $colorSecundario;
             font-size: 2rem;
             -webkit-text-stroke: 0.3px $tercerColor;
+            transition: 1.5s;
 
             &:hover{
                 background-color: #3b016d7c;
-                font-size: 1.5rem;
-                transition: 1s;
+                font-size: 2.5rem;
+                transition: 1.5s;
             }
         }
         .contenedor {

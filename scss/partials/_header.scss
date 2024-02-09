@@ -9,7 +9,7 @@
     .logo {
         color: $tercerColor;
     }
-    
+
     .open{
         display: none;
     }
@@ -23,6 +23,54 @@
         }
         .link {
             color: $tercerColor;
+        }
+        .button-nav {
+            color: $tercerColor;
+            text-decoration: none;
+            background: transparent;
+            border: none;
+            padding: 0.5em 0.5em;
+            position: relative;
+            transition: 0.5s ease;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 0;
+                background-color: $colorSecundario;
+                transition: 0.5s ease;
+            }
+
+            &:hover {
+                font-size: 1.25rem;
+                transition-delay: 0.3s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 0;
+                width: 100%;
+                background-color: $colorSecundario;
+                transition: 0.4s ease;
+                z-index: -1;
+            }
+
+            &:hover::after {
+                height: 100%;
+                transition-delay: 0.4s;
+                color: $colorSecundario;
+            }
         }
     }
 }
